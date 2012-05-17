@@ -13,6 +13,7 @@
 		1C43EA6715658E4A006C58AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C43EA6515658E4A006C58AE /* InfoPlist.strings */; };
 		1C43EA6915658E4A006C58AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C43EA6815658E4A006C58AE /* main.m */; };
 		1C43EA6D15658E4A006C58AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C43EA6C15658E4A006C58AE /* AppDelegate.m */; };
+		1C43EA7B15658F81006C58AE /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C43EA7A15658F81006C58AE /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1C43EA6A15658E4A006C58AE /* Simplr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simplr-Prefix.pch"; sourceTree = "<group>"; };
 		1C43EA6B15658E4A006C58AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1C43EA6C15658E4A006C58AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1C43EA7915658F81006C58AE /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		1C43EA7A15658F81006C58AE /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 		1C43EA6215658E4A006C58AE /* Simplr */ = {
 			isa = PBXGroup;
 			children = (
+				1C43EA7715658F4C006C58AE /* View Controllers */,
 				1C43EA6B15658E4A006C58AE /* AppDelegate.h */,
 				1C43EA6C15658E4A006C58AE /* AppDelegate.m */,
 				1C43EA6315658E4A006C58AE /* Supporting Files */,
@@ -88,6 +92,15 @@
 				1C43EA6A15658E4A006C58AE /* Simplr-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1C43EA7715658F4C006C58AE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C43EA7915658F81006C58AE /* RootViewController.h */,
+				1C43EA7A15658F81006C58AE /* RootViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +166,7 @@
 			files = (
 				1C43EA6915658E4A006C58AE /* main.m in Sources */,
 				1C43EA6D15658E4A006C58AE /* AppDelegate.m in Sources */,
+				1C43EA7B15658F81006C58AE /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +272,7 @@
 				1C43EA7215658E4A006C58AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
