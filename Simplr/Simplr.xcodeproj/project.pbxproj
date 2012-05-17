@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C43EA5D15658E4A006C58AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C43EA5C15658E4A006C58AE /* UIKit.framework */; };
+		1C43EA5F15658E4A006C58AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C43EA5E15658E4A006C58AE /* Foundation.framework */; };
+		1C43EA6115658E4A006C58AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C43EA6015658E4A006C58AE /* CoreGraphics.framework */; };
+		1C43EA6715658E4A006C58AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C43EA6515658E4A006C58AE /* InfoPlist.strings */; };
+		1C43EA6915658E4A006C58AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C43EA6815658E4A006C58AE /* main.m */; };
+		1C43EA6D15658E4A006C58AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C43EA6C15658E4A006C58AE /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C43EA5815658E4A006C58AE /* Simplr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simplr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C43EA5C15658E4A006C58AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1C43EA5E15658E4A006C58AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1C43EA6015658E4A006C58AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1C43EA6415658E4A006C58AE /* Simplr-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Simplr-Info.plist"; sourceTree = "<group>"; };
+		1C43EA6615658E4A006C58AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1C43EA6815658E4A006C58AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C43EA6A15658E4A006C58AE /* Simplr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simplr-Prefix.pch"; sourceTree = "<group>"; };
+		1C43EA6B15658E4A006C58AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1C43EA6C15658E4A006C58AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C43EA5515658E4A006C58AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C43EA5D15658E4A006C58AE /* UIKit.framework in Frameworks */,
+				1C43EA5F15658E4A006C58AE /* Foundation.framework in Frameworks */,
+				1C43EA6115658E4A006C58AE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C43EA4D15658E4A006C58AE = {
+			isa = PBXGroup;
+			children = (
+				1C43EA6215658E4A006C58AE /* Simplr */,
+				1C43EA5B15658E4A006C58AE /* Frameworks */,
+				1C43EA5915658E4A006C58AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C43EA5915658E4A006C58AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C43EA5815658E4A006C58AE /* Simplr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C43EA5B15658E4A006C58AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C43EA5C15658E4A006C58AE /* UIKit.framework */,
+				1C43EA5E15658E4A006C58AE /* Foundation.framework */,
+				1C43EA6015658E4A006C58AE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C43EA6215658E4A006C58AE /* Simplr */ = {
+			isa = PBXGroup;
+			children = (
+				1C43EA6B15658E4A006C58AE /* AppDelegate.h */,
+				1C43EA6C15658E4A006C58AE /* AppDelegate.m */,
+				1C43EA6315658E4A006C58AE /* Supporting Files */,
+			);
+			path = Simplr;
+			sourceTree = "<group>";
+		};
+		1C43EA6315658E4A006C58AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C43EA6415658E4A006C58AE /* Simplr-Info.plist */,
+				1C43EA6515658E4A006C58AE /* InfoPlist.strings */,
+				1C43EA6815658E4A006C58AE /* main.m */,
+				1C43EA6A15658E4A006C58AE /* Simplr-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C43EA5715658E4A006C58AE /* Simplr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C43EA7015658E4A006C58AE /* Build configuration list for PBXNativeTarget "Simplr" */;
+			buildPhases = (
+				1C43EA5415658E4A006C58AE /* Sources */,
+				1C43EA5515658E4A006C58AE /* Frameworks */,
+				1C43EA5615658E4A006C58AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Simplr;
+			productName = Simplr;
+			productReference = 1C43EA5815658E4A006C58AE /* Simplr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C43EA4F15658E4A006C58AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 1C43EA5215658E4A006C58AE /* Build configuration list for PBXProject "Simplr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1C43EA4D15658E4A006C58AE;
+			productRefGroup = 1C43EA5915658E4A006C58AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C43EA5715658E4A006C58AE /* Simplr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C43EA5615658E4A006C58AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C43EA6715658E4A006C58AE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C43EA5415658E4A006C58AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C43EA6915658E4A006C58AE /* main.m in Sources */,
+				1C43EA6D15658E4A006C58AE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1C43EA6515658E4A006C58AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C43EA6615658E4A006C58AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C43EA6E15658E4A006C58AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C43EA6F15658E4A006C58AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C43EA7115658E4A006C58AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simplr/Simplr-Prefix.pch";
+				INFOPLIST_FILE = "Simplr/Simplr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1C43EA7215658E4A006C58AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Simplr/Simplr-Prefix.pch";
+				INFOPLIST_FILE = "Simplr/Simplr-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C43EA5215658E4A006C58AE /* Build configuration list for PBXProject "Simplr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C43EA6E15658E4A006C58AE /* Debug */,
+				1C43EA6F15658E4A006C58AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C43EA7015658E4A006C58AE /* Build configuration list for PBXNativeTarget "Simplr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C43EA7115658E4A006C58AE /* Debug */,
+				1C43EA7215658E4A006C58AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C43EA4F15658E4A006C58AE /* Project object */;
+}
