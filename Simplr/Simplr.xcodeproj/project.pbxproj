@@ -14,6 +14,10 @@
 		1C43EA6915658E4A006C58AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C43EA6815658E4A006C58AE /* main.m */; };
 		1C43EA6D15658E4A006C58AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C43EA6C15658E4A006C58AE /* AppDelegate.m */; };
 		1C43EA7B15658F81006C58AE /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C43EA7A15658F81006C58AE /* RootViewController.m */; };
+		1C946CAC156BECA400690B0F /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CA8156BECA400690B0F /* background@2x.png */; };
+		1C946CAD156BECA400690B0F /* createButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CA9156BECA400690B0F /* createButton@2x.png */; };
+		1C946CAE156BECA400690B0F /* settingsButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CAA156BECA400690B0F /* settingsButton@2x.png */; };
+		1C946CAF156BECA400690B0F /* topbarSimpr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CAB156BECA400690B0F /* topbarSimpr@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		1C43EA6C15658E4A006C58AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1C43EA7915658F81006C58AE /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		1C43EA7A15658F81006C58AE /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		1C946CA8156BECA400690B0F /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		1C946CA9156BECA400690B0F /* createButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "createButton@2x.png"; sourceTree = "<group>"; };
+		1C946CAA156BECA400690B0F /* settingsButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settingsButton@2x.png"; sourceTree = "<group>"; };
+		1C946CAB156BECA400690B0F /* topbarSimpr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topbarSimpr@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				1C43EA6215658E4A006C58AE /* Simplr */,
+				1C946CA6156BEC7200690B0F /* Images */,
 				1C43EA5B15658E4A006C58AE /* Frameworks */,
 				1C43EA5915658E4A006C58AE /* Products */,
 			);
@@ -103,6 +112,17 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
+		1C946CA6156BEC7200690B0F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1C946CA8156BECA400690B0F /* background@2x.png */,
+				1C946CA9156BECA400690B0F /* createButton@2x.png */,
+				1C946CAA156BECA400690B0F /* settingsButton@2x.png */,
+				1C946CAB156BECA400690B0F /* topbarSimpr@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,6 +174,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C43EA6715658E4A006C58AE /* InfoPlist.strings in Resources */,
+				1C946CAC156BECA400690B0F /* background@2x.png in Resources */,
+				1C946CAD156BECA400690B0F /* createButton@2x.png in Resources */,
+				1C946CAE156BECA400690B0F /* settingsButton@2x.png in Resources */,
+				1C946CAF156BECA400690B0F /* topbarSimpr@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
