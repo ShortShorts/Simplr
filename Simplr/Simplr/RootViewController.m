@@ -11,13 +11,14 @@
 @interface RootViewController ()
 
 // Private Properties
-@property (strong) UIBarButtonItem      *settingsBarButtonItem;
-@property (strong) UIBarButtonItem      *composeBarButtonItem;
+@property (strong) UIButton             *settingsBarButtonItem;
+@property (strong) UIButton             *composeBarButtonItem;
 
 // Private Methods
 - (void)setBackgroundImageForNavigationBar;
 - (void)createNavigationBarButtons;
-- (UIBarButtonItem *)makeBarButtonItemWithImage:(UIImage *)image;
+- (UIButton *)makeBarButtonItemWithImage:(UIImage *)image andFrame:(CGRect)frame;
+- (void)buttonWasTouched:(id)sender;
 
 @end
 
@@ -35,16 +36,17 @@
     return self;
 }
 
-- (void)viewDidLoad
+- (void)loadView
 {
-    [super viewDidLoad];
+    [super loadView];
     
     // Set the background color of the view
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background@2x"]];
-
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
+    
 	// Do any additional setup after loading the view.
     [self setBackgroundImageForNavigationBar];
     [self createNavigationBarButtons];
+    
 }
 
 - (void)viewDidUnload
@@ -63,23 +65,39 @@
 // Set the graphics for the navigation bar
 - (void)setBackgroundImageForNavigationBar
 {
-    // Temporarily set the background of the bar to a placeholding yeller
-    self.navigationController.navigationBar.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@""]];
+    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"topBarSimplr"] forBarMetrics:UIBarMetricsDefault];
 }
 
 - (void)createNavigationBarButtons
 {
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(5, 5, 50, 50)];
-    button.backgroundColor = [UIColor redColor];
+    // Create the custom buttons
+    self.settingsBarButtonItem = [self makeBarButtonItemWithImage:[UIImage imageNamed:@"settingsButton"] andFrame:CGRectMake(4.0f, 24.0f, 34.0f, 34.0f)];
+    self.composeBarButtonItem  = [self makeBarButtonItemWithImage:[UIImage imageNamed:@"createButton"] andFrame:CGRectMake(282.0f, 24.0f, 34.0f, 34.0f)]; 
     
-    self.settingsBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Settings" style:UIBarButtonItemStylePlain target:self action:nil];
-    
-    self.navigationController.navigationItem.leftBarButtonItem = self.settingsBarButtonItem;
+    // Add custom buttons to the view
+    [self.view addSubview:self.settingsBarButtonItem];
+    [self.view addSubview:self.composeBarButtonItem];
 }
 
-- (UIBarButtonItem *)makeBarButtonItemWithImage:(UIImage *)image
+- (UIButton *)makeBarButtonItemWithImage:(UIImage *)image andFrame:(CGRect)frame
 {
-    
+    UIButton *customButton  = [UIButton buttonWithType:UIButtonTypeCustom];
+    [customButton setImage:image forState:UIControlStateNormal];
+    [customButton setFrame:frame];
+    [customButton addTarget:self action:@selector(buttonWasTouched:) forControlEvents:UIControlEventTouchUpInside];
+
+    return customButton;
+}
+
+#pragma Button Touch Detection methods
+
+- (void)buttonWasTouched:(id)sender
+{
+    if (sender == self.settingsBarButtonItem) {
+        NSLog(@"\nSettings button touched\n");
+    } else if (sender == self.composeBarButtonItem) {
+        NSLog(@"\nCompose button touched\n");
+    }
 }
 
 @end
