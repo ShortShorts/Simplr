@@ -7,18 +7,23 @@
 //
 
 #import "RootViewController.h"
+#import "SettingsViewController.h"
 
 @interface RootViewController ()
 
 // Private Properties
 @property (strong) UIButton             *settingsBarButtonItem;
 @property (strong) UIButton             *composeBarButtonItem;
+@property (strong) UITableView          *tableView;
+@property (strong) UIImageView          *backgroundImageView;
+@property (strong) UIImageView          *backgroundImageViewShadow;
 
 // Private Methods
 - (void)setBackgroundImageForNavigationBar;
 - (void)createNavigationBarButtons;
 - (UIButton *)makeBarButtonItemWithImage:(UIImage *)image andFrame:(CGRect)frame;
 - (void)buttonWasTouched:(id)sender;
+- (void)createTableView;
 
 @end
 
@@ -26,6 +31,9 @@
 
 @synthesize settingsBarButtonItem       = _settingsBarButtonItem;
 @synthesize composeBarButtonItem        = _composeBarButtonItem;
+@synthesize tableView                   = _tableView;
+@synthesize backgroundImageView         = _backgroundImageView;
+@synthesize backgroundImageViewShadow   = _backgroundImageViewShadow;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,12 +48,10 @@
 {
     [super loadView];
     
-    // Set the background color of the view
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];
-    
-	// Do any additional setup after loading the view.
+	// Create the custom nav bar, buttons, custom background, and table view
     [self setBackgroundImageForNavigationBar];
     [self createNavigationBarButtons];
+    [self createTableView];
     
 }
 
@@ -71,7 +77,7 @@
 - (void)createNavigationBarButtons
 {
     // Create the custom buttons
-    self.settingsBarButtonItem = [self makeBarButtonItemWithImage:[UIImage imageNamed:@"settingsButton"] andFrame:CGRectMake(4.0f, 24.0f, 34.0f, 34.0f)];
+    self.settingsBarButtonItem = [self makeBarButtonItemWithImage:[UIImage imageNamed:@"settingsButton"] andFrame:CGRectMake(5.0f, 24.0f, 34.0f, 34.0f)];
     self.composeBarButtonItem  = [self makeBarButtonItemWithImage:[UIImage imageNamed:@"createButton"] andFrame:CGRectMake(282.0f, 24.0f, 34.0f, 34.0f)]; 
     
     // Add custom buttons to the view
@@ -89,12 +95,38 @@
     return customButton;
 }
 
+#pragma Table View Methods
+
+- (void)createTableView
+{
+    // Create a custom background view to be visible behind the table view but not interfering with modal transitions
+    self.backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background"]];
+    self.backgroundImageView.frame  = CGRectMake(0, 64, 320, 414);
+    [self.view addSubview:self.backgroundImageView];
+    
+    // Custom shadow
+    self.backgroundImageViewShadow = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"topBarShadow"]];
+    self.backgroundImageViewShadow.frame  = CGRectMake(0, 65, 320, 1);
+    [self.view addSubview:self.backgroundImageViewShadow];
+    
+    // Create the table view
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, 320, 436) style:UITableViewStylePlain];
+    self.tableView.backgroundColor = [UIColor clearColor];
+    [self.view addSubview:self.tableView];
+}
+
 #pragma Button Touch Detection methods
 
 - (void)buttonWasTouched:(id)sender
 {
     if (sender == self.settingsBarButtonItem) {
-        NSLog(@"\nSettings button touched\n");
+        
+        // Create the view controller and make the transition flip horizontally
+        SettingsViewController *settingsViewController = [[SettingsViewController alloc] init];
+        settingsViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        
+        [self presentModalViewController:settingsViewController animated:YES];
+        
     } else if (sender == self.composeBarButtonItem) {
         NSLog(@"\nCompose button touched\n");
     }

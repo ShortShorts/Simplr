@@ -17,11 +17,13 @@
 		1C946CAC156BECA400690B0F /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CA8156BECA400690B0F /* background@2x.png */; };
 		1C946CAD156BECA400690B0F /* createButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CA9156BECA400690B0F /* createButton@2x.png */; };
 		1C946CAE156BECA400690B0F /* settingsButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CAA156BECA400690B0F /* settingsButton@2x.png */; };
-		1C946CAF156BECA400690B0F /* topBarSimplr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CAB156BECA400690B0F /* topBarSimplr@2x.png */; };
 		1C946CB7156BF15400690B0F /* createButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CB4156BF15400690B0F /* createButton.png */; };
 		1C946CB8156BF15400690B0F /* settingsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CB5156BF15400690B0F /* settingsButton.png */; };
-		1C946CB9156BF15400690B0F /* topBarSimplr.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CB6156BF15400690B0F /* topBarSimplr.png */; };
 		1C946CBB156BF1BD00690B0F /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CBA156BF1BD00690B0F /* background.png */; };
+		1C946CBE156BFD0400690B0F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C946CBD156BFD0400690B0F /* SettingsViewController.m */; };
+		1C946CCA156C050600690B0F /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CC8156C050600690B0F /* backButton.png */; };
+		1C946CCB156C050600690B0F /* backButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CC9156C050600690B0F /* backButton@2x.png */; };
+		1C946CDB156C121B00690B0F /* topBarShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CDA156C121B00690B0F /* topBarShadow.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,11 +42,19 @@
 		1C946CA8156BECA400690B0F /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
 		1C946CA9156BECA400690B0F /* createButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "createButton@2x.png"; sourceTree = "<group>"; };
 		1C946CAA156BECA400690B0F /* settingsButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settingsButton@2x.png"; sourceTree = "<group>"; };
-		1C946CAB156BECA400690B0F /* topBarSimplr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topBarSimplr@2x.png"; sourceTree = "<group>"; };
 		1C946CB4156BF15400690B0F /* createButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = createButton.png; sourceTree = "<group>"; };
 		1C946CB5156BF15400690B0F /* settingsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingsButton.png; sourceTree = "<group>"; };
-		1C946CB6156BF15400690B0F /* topBarSimplr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topBarSimplr.png; sourceTree = "<group>"; };
 		1C946CBA156BF1BD00690B0F /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		1C946CBC156BFD0400690B0F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		1C946CBD156BFD0400690B0F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		1C946CC8156C050600690B0F /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+		1C946CC9156C050600690B0F /* backButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backButton@2x.png"; sourceTree = "<group>"; };
+		1C946CD4156C11C500690B0F /* settingsTopBar.png */ = {isa = PBXFileReference; path = settingsTopBar.png; sourceTree = "<group>"; };
+		1C946CD5156C11C500690B0F /* settingsTopBar@2x.png */ = {isa = PBXFileReference; path = "settingsTopBar@2x.png"; sourceTree = "<group>"; };
+		1C946CD7156C11C500690B0F /* topBarShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topBarShadow@2x.png"; sourceTree = "<group>"; };
+		1C946CD8156C11C500690B0F /* topBarSimplr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topBarSimplr.png; sourceTree = "<group>"; };
+		1C946CD9156C11C500690B0F /* topBarSimplr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topBarSimplr@2x.png"; sourceTree = "<group>"; };
+		1C946CDA156C121B00690B0F /* topBarShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topBarShadow.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +78,7 @@
 				1C946CA6156BEC7200690B0F /* Images */,
 				1C43EA5B15658E4A006C58AE /* Frameworks */,
 				1C43EA5915658E4A006C58AE /* Products */,
+				1C43EA6315658E4A006C58AE /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +106,6 @@
 				1C43EA7715658F4C006C58AE /* View Controllers */,
 				1C43EA6B15658E4A006C58AE /* AppDelegate.h */,
 				1C43EA6C15658E4A006C58AE /* AppDelegate.m */,
-				1C43EA6315658E4A006C58AE /* Supporting Files */,
 			);
 			path = Simplr;
 			sourceTree = "<group>";
@@ -109,6 +119,7 @@
 				1C43EA6A15658E4A006C58AE /* Simplr-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = Simplr;
 			sourceTree = "<group>";
 		};
 		1C43EA7715658F4C006C58AE /* View Controllers */ = {
@@ -116,6 +127,8 @@
 			children = (
 				1C43EA7915658F81006C58AE /* RootViewController.h */,
 				1C43EA7A15658F81006C58AE /* RootViewController.m */,
+				1C946CBC156BFD0400690B0F /* SettingsViewController.h */,
+				1C946CBD156BFD0400690B0F /* SettingsViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -123,16 +136,54 @@
 		1C946CA6156BEC7200690B0F /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				1C946CBA156BF1BD00690B0F /* background.png */,
-				1C946CB4156BF15400690B0F /* createButton.png */,
-				1C946CB5156BF15400690B0F /* settingsButton.png */,
-				1C946CB6156BF15400690B0F /* topBarSimplr.png */,
-				1C946CA8156BECA400690B0F /* background@2x.png */,
-				1C946CA9156BECA400690B0F /* createButton@2x.png */,
-				1C946CAA156BECA400690B0F /* settingsButton@2x.png */,
-				1C946CAB156BECA400690B0F /* topBarSimplr@2x.png */,
+				1C946CBF156BFEAC00690B0F /* Backgrounds */,
+				1C946CC1156BFECB00690B0F /* Buttons */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		1C946CBF156BFEAC00690B0F /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				1C946CC3156BFEF000690B0F /* NavBar */,
+				1C946CBA156BF1BD00690B0F /* background.png */,
+				1C946CA8156BECA400690B0F /* background@2x.png */,
+			);
+			name = Backgrounds;
+			sourceTree = "<group>";
+		};
+		1C946CC1156BFECB00690B0F /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				1C946CC2156BFED000690B0F /* NavBar */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		1C946CC2156BFED000690B0F /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+				1C946CC8156C050600690B0F /* backButton.png */,
+				1C946CC9156C050600690B0F /* backButton@2x.png */,
+				1C946CB4156BF15400690B0F /* createButton.png */,
+				1C946CB5156BF15400690B0F /* settingsButton.png */,
+				1C946CA9156BECA400690B0F /* createButton@2x.png */,
+				1C946CAA156BECA400690B0F /* settingsButton@2x.png */,
+			);
+			name = NavBar;
+			sourceTree = "<group>";
+		};
+		1C946CC3156BFEF000690B0F /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+				1C946CDA156C121B00690B0F /* topBarShadow.png */,
+				1C946CD4156C11C500690B0F /* settingsTopBar.png */,
+				1C946CD5156C11C500690B0F /* settingsTopBar@2x.png */,
+				1C946CD7156C11C500690B0F /* topBarShadow@2x.png */,
+				1C946CD8156C11C500690B0F /* topBarSimplr.png */,
+				1C946CD9156C11C500690B0F /* topBarSimplr@2x.png */,
+			);
+			name = NavBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,11 +240,12 @@
 				1C946CAC156BECA400690B0F /* background@2x.png in Resources */,
 				1C946CAD156BECA400690B0F /* createButton@2x.png in Resources */,
 				1C946CAE156BECA400690B0F /* settingsButton@2x.png in Resources */,
-				1C946CAF156BECA400690B0F /* topBarSimplr@2x.png in Resources */,
 				1C946CB7156BF15400690B0F /* createButton.png in Resources */,
 				1C946CB8156BF15400690B0F /* settingsButton.png in Resources */,
-				1C946CB9156BF15400690B0F /* topBarSimplr.png in Resources */,
 				1C946CBB156BF1BD00690B0F /* background.png in Resources */,
+				1C946CCA156C050600690B0F /* backButton.png in Resources */,
+				1C946CCB156C050600690B0F /* backButton@2x.png in Resources */,
+				1C946CDB156C121B00690B0F /* topBarShadow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +259,7 @@
 				1C43EA6915658E4A006C58AE /* main.m in Sources */,
 				1C43EA6D15658E4A006C58AE /* AppDelegate.m in Sources */,
 				1C43EA7B15658F81006C58AE /* RootViewController.m in Sources */,
+				1C946CBE156BFD0400690B0F /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
