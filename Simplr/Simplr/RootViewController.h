@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface RootViewController : UINavigationController
+    <UITableViewDelegate,
+     UITableViewDataSource>
 
 @end

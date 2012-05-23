@@ -28,6 +28,7 @@
 		1C976538156D52D800A3CA06 /* settingsTopBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C976534156D52D800A3CA06 /* settingsTopBar@2x.png */; };
 		1C976539156D52D800A3CA06 /* topBarSimplr.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C976535156D52D800A3CA06 /* topBarSimplr.png */; };
 		1C97653A156D52D800A3CA06 /* topBarSimplr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C976536156D52D800A3CA06 /* topBarSimplr@2x.png */; };
+		1C97653F156D66BC00A3CA06 /* LRSlidingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C97653D156D658300A3CA06 /* LRSlidingTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,8 @@
 		1C976534156D52D800A3CA06 /* settingsTopBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settingsTopBar@2x.png"; sourceTree = "<group>"; };
 		1C976535156D52D800A3CA06 /* topBarSimplr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topBarSimplr.png; sourceTree = "<group>"; };
 		1C976536156D52D800A3CA06 /* topBarSimplr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topBarSimplr@2x.png"; sourceTree = "<group>"; };
+		1C97653C156D658300A3CA06 /* LRSlidingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRSlidingTableViewCell.h; sourceTree = "<group>"; };
+		1C97653D156D658300A3CA06 /* LRSlidingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRSlidingTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,7 @@
 		1C43EA6215658E4A006C58AE /* Simplr */ = {
 			isa = PBXGroup;
 			children = (
+				1C97653E156D658A00A3CA06 /* Table View Cells */,
 				1C43EA7715658F4C006C58AE /* View Controllers */,
 				1C43EA6B15658E4A006C58AE /* AppDelegate.h */,
 				1C43EA6C15658E4A006C58AE /* AppDelegate.m */,
@@ -190,6 +194,15 @@
 			name = NavBar;
 			sourceTree = "<group>";
 		};
+		1C97653E156D658A00A3CA06 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1C97653C156D658300A3CA06 /* LRSlidingTableViewCell.h */,
+				1C97653D156D658300A3CA06 /* LRSlidingTableViewCell.m */,
+			);
+			name = "Table View Cells";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -264,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C97653F156D66BC00A3CA06 /* LRSlidingTableViewCell.m in Sources */,
 				1C43EA6915658E4A006C58AE /* main.m in Sources */,
 				1C43EA6D15658E4A006C58AE /* AppDelegate.m in Sources */,
 				1C43EA7B15658F81006C58AE /* RootViewController.m in Sources */,

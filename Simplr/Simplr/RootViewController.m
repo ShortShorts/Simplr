@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "SettingsViewController.h"
+#import "LRSlidingTableViewCell.h"
 
 @interface RootViewController ()
 
@@ -112,10 +113,42 @@
     // Create the table view
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 65, 320, 436) style:UITableViewStylePlain];
     self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
 }
 
-#pragma Button Touch Detection methods
+#pragma Table View Delegate
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 10;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView 
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"\nPopulating cells\n");
+
+    
+    static NSString *identifier = @"SCROLLING_CELL";
+    
+    // Create a reference to our new sliding cell
+    LRSlidingTableViewCell *cell = (LRSlidingTableViewCell *)[tableView dequeueReusableCellWithIdentifier:identifier];
+    
+    if (cell == nil) {
+        // Create a new cell if it doesn't exist yet
+        cell = [[LRSlidingTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        
+        cell.textLabel.text = @"My sliding cell";
+        cell.backgroundView.backgroundColor = [UIColor blueColor];
+    }
+    
+
+    return cell;
+}
+
+#pragma Button Touch Detection
 
 - (void)buttonWasTouched:(id)sender
 {
