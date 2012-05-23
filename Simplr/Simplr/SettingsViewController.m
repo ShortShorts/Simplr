@@ -103,11 +103,11 @@
     
     // Custom shadow
     self.backgroundImageViewShadow = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"topBarShadow"]];
-    self.backgroundImageViewShadow.frame  = CGRectMake(0, 65, 320, 1);
+    self.backgroundImageViewShadow.frame  = CGRectMake(0, 44, 320, 1);
     [self.view addSubview:self.backgroundImageViewShadow];
     
     // Create the table view
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 44, 320, 436) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 45, 320, 436) style:UITableViewStylePlain];
     self.tableView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.tableView];
 }

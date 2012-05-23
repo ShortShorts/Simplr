@@ -78,7 +78,7 @@
 {
     // Create the custom buttons
     self.settingsBarButtonItem = [self makeBarButtonItemWithImage:[UIImage imageNamed:@"settingsButton"] andFrame:CGRectMake(5.0f, 24.0f, 34.0f, 34.0f)];
-    self.composeBarButtonItem  = [self makeBarButtonItemWithImage:[UIImage imageNamed:@"createButton"] andFrame:CGRectMake(282.0f, 24.0f, 34.0f, 34.0f)]; 
+    self.composeBarButtonItem  = [self makeBarButtonItemWithImage:[UIImage imageNamed:@"createButton"] andFrame:CGRectMake(281.0f, 24.0f, 34.0f, 34.0f)]; 
     
     // Add custom buttons to the view
     [self.view addSubview:self.settingsBarButtonItem];
@@ -106,11 +106,11 @@
     
     // Custom shadow
     self.backgroundImageViewShadow = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"topBarShadow"]];
-    self.backgroundImageViewShadow.frame  = CGRectMake(0, 65, 320, 1);
+    self.backgroundImageViewShadow.frame  = CGRectMake(0, 64, 320, 1);
     [self.view addSubview:self.backgroundImageViewShadow];
     
     // Create the table view
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, 320, 436) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 65, 320, 436) style:UITableViewStylePlain];
     self.tableView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.tableView];
 }

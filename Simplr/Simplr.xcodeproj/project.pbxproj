@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C080DBA156C148000DC3DC9 /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C080DB8156C148000DC3DC9 /* backButton.png */; };
+		1C080DBB156C148000DC3DC9 /* backButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C080DB9156C148000DC3DC9 /* backButton@2x.png */; };
 		1C43EA5D15658E4A006C58AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C43EA5C15658E4A006C58AE /* UIKit.framework */; };
 		1C43EA5F15658E4A006C58AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C43EA5E15658E4A006C58AE /* Foundation.framework */; };
 		1C43EA6115658E4A006C58AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C43EA6015658E4A006C58AE /* CoreGraphics.framework */; };
@@ -21,12 +23,16 @@
 		1C946CB8156BF15400690B0F /* settingsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CB5156BF15400690B0F /* settingsButton.png */; };
 		1C946CBB156BF1BD00690B0F /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CBA156BF1BD00690B0F /* background.png */; };
 		1C946CBE156BFD0400690B0F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C946CBD156BFD0400690B0F /* SettingsViewController.m */; };
-		1C946CCA156C050600690B0F /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CC8156C050600690B0F /* backButton.png */; };
-		1C946CCB156C050600690B0F /* backButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CC9156C050600690B0F /* backButton@2x.png */; };
 		1C946CDB156C121B00690B0F /* topBarShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C946CDA156C121B00690B0F /* topBarShadow.png */; };
+		1C976537156D52D800A3CA06 /* settingsTopBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C976533156D52D800A3CA06 /* settingsTopBar.png */; };
+		1C976538156D52D800A3CA06 /* settingsTopBar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C976534156D52D800A3CA06 /* settingsTopBar@2x.png */; };
+		1C976539156D52D800A3CA06 /* topBarSimplr.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C976535156D52D800A3CA06 /* topBarSimplr.png */; };
+		1C97653A156D52D800A3CA06 /* topBarSimplr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C976536156D52D800A3CA06 /* topBarSimplr@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C080DB8156C148000DC3DC9 /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+		1C080DB9156C148000DC3DC9 /* backButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backButton@2x.png"; sourceTree = "<group>"; };
 		1C43EA5815658E4A006C58AE /* Simplr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simplr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C43EA5C15658E4A006C58AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1C43EA5E15658E4A006C58AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,14 +53,12 @@
 		1C946CBA156BF1BD00690B0F /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		1C946CBC156BFD0400690B0F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		1C946CBD156BFD0400690B0F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		1C946CC8156C050600690B0F /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
-		1C946CC9156C050600690B0F /* backButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backButton@2x.png"; sourceTree = "<group>"; };
-		1C946CD4156C11C500690B0F /* settingsTopBar.png */ = {isa = PBXFileReference; path = settingsTopBar.png; sourceTree = "<group>"; };
-		1C946CD5156C11C500690B0F /* settingsTopBar@2x.png */ = {isa = PBXFileReference; path = "settingsTopBar@2x.png"; sourceTree = "<group>"; };
 		1C946CD7156C11C500690B0F /* topBarShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topBarShadow@2x.png"; sourceTree = "<group>"; };
-		1C946CD8156C11C500690B0F /* topBarSimplr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topBarSimplr.png; sourceTree = "<group>"; };
-		1C946CD9156C11C500690B0F /* topBarSimplr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topBarSimplr@2x.png"; sourceTree = "<group>"; };
 		1C946CDA156C121B00690B0F /* topBarShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topBarShadow.png; sourceTree = "<group>"; };
+		1C976533156D52D800A3CA06 /* settingsTopBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingsTopBar.png; sourceTree = "<group>"; };
+		1C976534156D52D800A3CA06 /* settingsTopBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settingsTopBar@2x.png"; sourceTree = "<group>"; };
+		1C976535156D52D800A3CA06 /* topBarSimplr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topBarSimplr.png; sourceTree = "<group>"; };
+		1C976536156D52D800A3CA06 /* topBarSimplr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topBarSimplr@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +167,8 @@
 		1C946CC2156BFED000690B0F /* NavBar */ = {
 			isa = PBXGroup;
 			children = (
-				1C946CC8156C050600690B0F /* backButton.png */,
-				1C946CC9156C050600690B0F /* backButton@2x.png */,
+				1C080DB8156C148000DC3DC9 /* backButton.png */,
+				1C080DB9156C148000DC3DC9 /* backButton@2x.png */,
 				1C946CB4156BF15400690B0F /* createButton.png */,
 				1C946CB5156BF15400690B0F /* settingsButton.png */,
 				1C946CA9156BECA400690B0F /* createButton@2x.png */,
@@ -176,12 +180,12 @@
 		1C946CC3156BFEF000690B0F /* NavBar */ = {
 			isa = PBXGroup;
 			children = (
+				1C976533156D52D800A3CA06 /* settingsTopBar.png */,
+				1C976534156D52D800A3CA06 /* settingsTopBar@2x.png */,
+				1C976535156D52D800A3CA06 /* topBarSimplr.png */,
+				1C976536156D52D800A3CA06 /* topBarSimplr@2x.png */,
 				1C946CDA156C121B00690B0F /* topBarShadow.png */,
-				1C946CD4156C11C500690B0F /* settingsTopBar.png */,
-				1C946CD5156C11C500690B0F /* settingsTopBar@2x.png */,
 				1C946CD7156C11C500690B0F /* topBarShadow@2x.png */,
-				1C946CD8156C11C500690B0F /* topBarSimplr.png */,
-				1C946CD9156C11C500690B0F /* topBarSimplr@2x.png */,
 			);
 			name = NavBar;
 			sourceTree = "<group>";
@@ -243,9 +247,13 @@
 				1C946CB7156BF15400690B0F /* createButton.png in Resources */,
 				1C946CB8156BF15400690B0F /* settingsButton.png in Resources */,
 				1C946CBB156BF1BD00690B0F /* background.png in Resources */,
-				1C946CCA156C050600690B0F /* backButton.png in Resources */,
-				1C946CCB156C050600690B0F /* backButton@2x.png in Resources */,
 				1C946CDB156C121B00690B0F /* topBarShadow.png in Resources */,
+				1C080DBA156C148000DC3DC9 /* backButton.png in Resources */,
+				1C080DBB156C148000DC3DC9 /* backButton@2x.png in Resources */,
+				1C976537156D52D800A3CA06 /* settingsTopBar.png in Resources */,
+				1C976538156D52D800A3CA06 /* settingsTopBar@2x.png in Resources */,
+				1C976539156D52D800A3CA06 /* topBarSimplr.png in Resources */,
+				1C97653A156D52D800A3CA06 /* topBarSimplr@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
