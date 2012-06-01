@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RootViewController.h"
 
 @class LRSlidingTableViewCell;
 
@@ -23,10 +22,10 @@ typedef enum {
 @end
 
 @interface LRSlidingTableViewCell : UITableViewCell {
-//  id <LRSlidingTableViewCellDelegate> delegate;
+  id <LRSlidingTableViewCellDelegate> delegate;
 }
 
-@property (assign) id <LRSlidingTableViewCellDelegate> delegate;
+@property (strong) id <LRSlidingTableViewCellDelegate> delegate;
 @property (nonatomic, assign) LRSlidingTableViewCellSwipeDirection swipeDirection;
 @property (nonatomic, retain) UISwipeGestureRecognizer *lastGestureRecognized;
 

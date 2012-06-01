@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LRSlidingTableViewCell.h"
 
 @interface RootViewController : UINavigationController
     <UITableViewDelegate,
-     UITableViewDataSource>
+     UITableViewDataSource,
+     LRSlidingTableViewCellDelegate>
 
 @end

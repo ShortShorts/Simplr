@@ -8,16 +8,17 @@
 
 #import "RootViewController.h"
 #import "SettingsViewController.h"
-#import "LRSlidingTableViewCell.h"
 
 @interface RootViewController ()
 
 // Private Properties
-@property (strong) UIButton             *settingsBarButtonItem;
-@property (strong) UIButton             *composeBarButtonItem;
-@property (strong) UITableView          *tableView;
-@property (strong) UIImageView          *backgroundImageView;
-@property (strong) UIImageView          *backgroundImageViewShadow;
+@property (strong) UIButton                             *settingsBarButtonItem;
+@property (strong) UIButton                             *composeBarButtonItem;
+@property (strong) UITableView                          *tableView;
+@property (strong) UIImageView                          *backgroundImageView;
+@property (strong) UIImageView                          *backgroundImageViewShadow;
+@property (nonatomic, strong) LRSlidingTableViewCell    *currentlyActiveSlidingCell;
+@property (assign) LRSlidingTableViewCellSwipeDirection swipeDirection;
 
 // Private Methods
 - (void)setBackgroundImageForNavigationBar;
@@ -30,17 +31,22 @@
 
 @implementation RootViewController
 
-@synthesize settingsBarButtonItem       = _settingsBarButtonItem;
-@synthesize composeBarButtonItem        = _composeBarButtonItem;
-@synthesize tableView                   = _tableView;
-@synthesize backgroundImageView         = _backgroundImageView;
-@synthesize backgroundImageViewShadow   = _backgroundImageViewShadow;
+@synthesize settingsBarButtonItem           = _settingsBarButtonItem;
+@synthesize composeBarButtonItem            = _composeBarButtonItem;
+@synthesize tableView                       = _tableView;
+@synthesize backgroundImageView             = _backgroundImageView;
+@synthesize backgroundImageViewShadow       = _backgroundImageViewShadow;
+@synthesize currentlyActiveSlidingCell      = _currentlyActiveSlidingCell;
+@synthesize swipeDirection                  = _swipeDirection;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
+        // Change the swipe direction
+        self.swipeDirection = 0;
     }
     return self;
 }
@@ -128,24 +134,55 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView 
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"\nPopulating cells\n");
-
+    static NSString *identifier = @"CELL_IDENTIFIER";
     
-    static NSString *identifier = @"SCROLLING_CELL";
-    
-    // Create a reference to our new sliding cell
     LRSlidingTableViewCell *cell = (LRSlidingTableViewCell *)[tableView dequeueReusableCellWithIdentifier:identifier];
     
     if (cell == nil) {
-        // Create a new cell if it doesn't exist yet
         cell = [[LRSlidingTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
-        
-        cell.textLabel.text = @"My sliding cell";
-        cell.backgroundView.backgroundColor = [UIColor blueColor];
     }
     
-
+    cell.contentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"tableCellFacebook"]];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.textLabel.text = [NSString stringWithFormat:@"Cell %d", indexPath.row];
+    cell.swipeDirection = self.swipeDirection;
+    cell.delegate = self;
+    
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 87;
+}
+
+/** Store a reference to the cell that has been swiped.
+ *
+ *  This allows us to slide the cell's content back in again if the user
+ *  starts dragging the table view or swipes a different cell. 
+ */
+- (void)cellDidReceiveSwipe:(LRSlidingTableViewCell *)cell
+{
+    self.currentlyActiveSlidingCell = cell;
+}
+
+/** Any swiped cell should be reset when we start to scroll. */
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    self.currentlyActiveSlidingCell = nil;
+}
+
+/** Whenever the current active sliding cell changes (or is set to nil)
+ * the existing one should be reset by calling it's slideInContentView method. */
+- (void)setCurrentlyActiveSlidingCell:(LRSlidingTableViewCell *)cell
+{
+    [_currentlyActiveSlidingCell slideInContentView];
+    _currentlyActiveSlidingCell = cell;
 }
 
 #pragma Button Touch Detection

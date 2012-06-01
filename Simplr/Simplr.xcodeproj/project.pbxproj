@@ -29,6 +29,11 @@
 		1C976539156D52D800A3CA06 /* topBarSimplr.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C976535156D52D800A3CA06 /* topBarSimplr.png */; };
 		1C97653A156D52D800A3CA06 /* topBarSimplr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C976536156D52D800A3CA06 /* topBarSimplr@2x.png */; };
 		1C97653F156D66BC00A3CA06 /* LRSlidingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C97653D156D658300A3CA06 /* LRSlidingTableViewCell.m */; };
+		1C9FA341157848E9003AAA20 /* tableCellFacebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9FA33D157848E9003AAA20 /* tableCellFacebook@2x.png */; };
+		1C9FA342157848E9003AAA20 /* tableCellInstagram@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9FA33E157848E9003AAA20 /* tableCellInstagram@2x.png */; };
+		1C9FA343157848E9003AAA20 /* tableCellTumblr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9FA33F157848E9003AAA20 /* tableCellTumblr@2x.png */; };
+		1C9FA344157848E9003AAA20 /* tableCellTwitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9FA340157848E9003AAA20 /* tableCellTwitter@2x.png */; };
+		1C9FA346157849AA003AAA20 /* tableCellFacebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9FA345157849AA003AAA20 /* tableCellFacebook.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +67,11 @@
 		1C976536156D52D800A3CA06 /* topBarSimplr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topBarSimplr@2x.png"; sourceTree = "<group>"; };
 		1C97653C156D658300A3CA06 /* LRSlidingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRSlidingTableViewCell.h; sourceTree = "<group>"; };
 		1C97653D156D658300A3CA06 /* LRSlidingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRSlidingTableViewCell.m; sourceTree = "<group>"; };
+		1C9FA33D157848E9003AAA20 /* tableCellFacebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableCellFacebook@2x.png"; sourceTree = "<group>"; };
+		1C9FA33E157848E9003AAA20 /* tableCellInstagram@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableCellInstagram@2x.png"; sourceTree = "<group>"; };
+		1C9FA33F157848E9003AAA20 /* tableCellTumblr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableCellTumblr@2x.png"; sourceTree = "<group>"; };
+		1C9FA340157848E9003AAA20 /* tableCellTwitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableCellTwitter@2x.png"; sourceTree = "<group>"; };
+		1C9FA345157849AA003AAA20 /* tableCellFacebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableCellFacebook.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +163,7 @@
 		1C946CBF156BFEAC00690B0F /* Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
+				1C9FA33B157848DA003AAA20 /* Table Cells */,
 				1C946CC3156BFEF000690B0F /* NavBar */,
 				1C946CBA156BF1BD00690B0F /* background.png */,
 				1C946CA8156BECA400690B0F /* background@2x.png */,
@@ -201,6 +212,18 @@
 				1C97653D156D658300A3CA06 /* LRSlidingTableViewCell.m */,
 			);
 			name = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		1C9FA33B157848DA003AAA20 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1C9FA345157849AA003AAA20 /* tableCellFacebook.png */,
+				1C9FA33D157848E9003AAA20 /* tableCellFacebook@2x.png */,
+				1C9FA33E157848E9003AAA20 /* tableCellInstagram@2x.png */,
+				1C9FA33F157848E9003AAA20 /* tableCellTumblr@2x.png */,
+				1C9FA340157848E9003AAA20 /* tableCellTwitter@2x.png */,
+			);
+			name = "Table Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +290,11 @@
 				1C976538156D52D800A3CA06 /* settingsTopBar@2x.png in Resources */,
 				1C976539156D52D800A3CA06 /* topBarSimplr.png in Resources */,
 				1C97653A156D52D800A3CA06 /* topBarSimplr@2x.png in Resources */,
+				1C9FA341157848E9003AAA20 /* tableCellFacebook@2x.png in Resources */,
+				1C9FA342157848E9003AAA20 /* tableCellInstagram@2x.png in Resources */,
+				1C9FA343157848E9003AAA20 /* tableCellTumblr@2x.png in Resources */,
+				1C9FA344157848E9003AAA20 /* tableCellTwitter@2x.png in Resources */,
+				1C9FA346157849AA003AAA20 /* tableCellFacebook.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
