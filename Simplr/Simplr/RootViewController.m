@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "SettingsViewController.h"
+#import "ComposeViewController.h"
 
 @interface RootViewController ()
 
@@ -46,7 +47,7 @@
         // Custom initialization
         
         // Change the swipe direction
-        self.swipeDirection = 0;
+        self.swipeDirection = 1;
     }
     return self;
 }
@@ -84,8 +85,8 @@
 - (void)createNavigationBarButtons
 {
     // Create the custom buttons
-    self.settingsBarButtonItem = [self makeBarButtonItemWithImage:[UIImage imageNamed:@"settingsButton"] andFrame:CGRectMake(5.0f, 24.0f, 34.0f, 34.0f)];
-    self.composeBarButtonItem  = [self makeBarButtonItemWithImage:[UIImage imageNamed:@"createButton"] andFrame:CGRectMake(281.0f, 24.0f, 34.0f, 34.0f)]; 
+    self.settingsBarButtonItem = [self makeBarButtonItemWithImage:[UIImage imageNamed:@"buttonSettings"] andFrame:CGRectMake(8.0f, 26.0f, 31.0f, 31.0f)];
+    self.composeBarButtonItem  = [self makeBarButtonItemWithImage:[UIImage imageNamed:@"buttonCreate"] andFrame:CGRectMake(281.0f, 26.0f, 31.0f, 31.0f)]; 
     
     // Add custom buttons to the view
     [self.view addSubview:self.settingsBarButtonItem];
@@ -108,7 +109,7 @@
 {
     // Create a custom background view to be visible behind the table view but not interfering with modal transitions
     self.backgroundImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background"]];
-    self.backgroundImageView.frame  = CGRectMake(0, 64, 320, 414);
+    self.backgroundImageView.frame  = CGRectMake(0, 64, 320, 416);
     [self.view addSubview:self.backgroundImageView];
     
     // Custom shadow
@@ -117,10 +118,12 @@
     [self.view addSubview:self.backgroundImageViewShadow];
     
     // Create the table view
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 65, 320, 436) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 65, 320, 431) style:UITableViewStylePlain];
     self.tableView.backgroundColor = [UIColor clearColor];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
     [self.view addSubview:self.tableView];
 }
 
@@ -142,9 +145,9 @@
         cell = [[LRSlidingTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    cell.contentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"tableCellFacebook"]];
+    cell.contentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"tableCellSquare"]];
+    
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.textLabel.text = [NSString stringWithFormat:@"Cell %d", indexPath.row];
     cell.swipeDirection = self.swipeDirection;
     cell.delegate = self;
     
@@ -158,7 +161,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 87;
+    return 85;
 }
 
 /** Store a reference to the cell that has been swiped.
@@ -198,7 +201,9 @@
         [self presentModalViewController:settingsViewController animated:YES];
         
     } else if (sender == self.composeBarButtonItem) {
-        NSLog(@"\nCompose button touched\n");
+        
+        ComposeViewController *composeController = [[ComposeViewController alloc] init];
+        [self presentModalViewController:composeController animated:YES];
     }
 }
 

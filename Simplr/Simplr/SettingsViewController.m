@@ -80,7 +80,8 @@
 
 - (void)createCloseButton
 {
-    self.closeButton = [self makeBarButtonItemWithImage:[UIImage imageNamed:@"backButton"] andFrame:CGRectMake(4.0f, 4.0f, 34.0f, 34.0f)];
+    self.closeButton = [self makeBarButtonItemWithImage:[UIImage imageNamed:@"buttonX"] andFrame:CGRectMake(8.0f, 7.0f, 31.0f, 31.0f)];
+    
     [self.view addSubview:self.closeButton];
 }
 

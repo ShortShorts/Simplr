@@ -25,9 +25,9 @@
     self.swipeDirection = LRSlidingTableViewCellSwipeDirectionRight;
 
     /** Add a default empty background view to make it clear that it's all working */
-    UIView *defaultBackgroundView = [[UIView alloc] initWithFrame:self.contentView.frame];
-    defaultBackgroundView.backgroundColor = [UIColor darkGrayColor];
-    self.backgroundView = defaultBackgroundView;
+//    UIView *defaultBackgroundView = [[UIView alloc] initWithFrame:self.contentView.frame];
+//    defaultBackgroundView.backgroundColor = [UIColor darkGrayColor];
+//    self.backgroundView = defaultBackgroundView;
   }
   
   return self;
@@ -94,7 +94,8 @@ void LR_offsetView(UIView *view, CGFloat offsetX, CGFloat offsetY)
   
   switch (self.lastGestureRecognized.direction) {
     case UISwipeGestureRecognizerDirectionLeft:
-      offsetX = -self.contentView.frame.size.width;
+//      offsetX = -self.contentView.frame.size.width;
+          offsetX = -92;
       break;
     case UISwipeGestureRecognizerDirectionRight:
       offsetX = self.contentView.frame.size.width;
@@ -132,7 +133,7 @@ void LR_offsetView(UIView *view, CGFloat offsetX, CGFloat offsetY)
   [UIView animateWithDuration:0.1
                         delay:0 
                       options:UIViewAnimationOptionCurveEaseOut|UIViewAnimationOptionAllowUserInteraction 
-                   animations:^{ LR_offsetView(self.contentView, offsetX, 0); } 
+                   animations:^{ LR_offsetView(self.contentView, 92, 0); } 
                    completion:^(BOOL f) {
                    
     [UIView animateWithDuration:0.1 delay:0 

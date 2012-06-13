@@ -34,6 +34,19 @@
 		1C9FA343157848E9003AAA20 /* tableCellTumblr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9FA33F157848E9003AAA20 /* tableCellTumblr@2x.png */; };
 		1C9FA344157848E9003AAA20 /* tableCellTwitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9FA340157848E9003AAA20 /* tableCellTwitter@2x.png */; };
 		1C9FA346157849AA003AAA20 /* tableCellFacebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9FA345157849AA003AAA20 /* tableCellFacebook.png */; };
+		1CBFAF6815892DF4008D08DD /* tableCell.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF6615892DF4008D08DD /* tableCell.png */; };
+		1CBFAF6915892DF4008D08DD /* tableCell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF6715892DF4008D08DD /* tableCell@2x.png */; };
+		1CBFAF6C15892ECE008D08DD /* tableCell10px.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF6A15892ECE008D08DD /* tableCell10px.png */; };
+		1CBFAF6D15892ECE008D08DD /* tableCell10px@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF6B15892ECE008D08DD /* tableCell10px@2x.png */; };
+		1CBFAF70158930D9008D08DD /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBFAF6F158930D9008D08DD /* ComposeViewController.m */; };
+		1CBFAF73158931AC008D08DD /* tableCellSquare.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF71158931AC008D08DD /* tableCellSquare.png */; };
+		1CBFAF74158931AC008D08DD /* tableCellSquare@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF72158931AC008D08DD /* tableCellSquare@2x.png */; };
+		1CBFAF771589346D008D08DD /* buttonCreate.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF751589346D008D08DD /* buttonCreate.png */; };
+		1CBFAF781589346D008D08DD /* buttonCreate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF761589346D008D08DD /* buttonCreate@2x.png */; };
+		1CBFAF7B158934CE008D08DD /* buttonSettings.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF79158934CE008D08DD /* buttonSettings.png */; };
+		1CBFAF7C158934CE008D08DD /* buttonSettings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF7A158934CE008D08DD /* buttonSettings@2x.png */; };
+		1CBFAF7F15893580008D08DD /* buttonX.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF7D15893580008D08DD /* buttonX.png */; };
+		1CBFAF8015893580008D08DD /* buttonX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF7E15893580008D08DD /* buttonX@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +85,20 @@
 		1C9FA33F157848E9003AAA20 /* tableCellTumblr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableCellTumblr@2x.png"; sourceTree = "<group>"; };
 		1C9FA340157848E9003AAA20 /* tableCellTwitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableCellTwitter@2x.png"; sourceTree = "<group>"; };
 		1C9FA345157849AA003AAA20 /* tableCellFacebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableCellFacebook.png; sourceTree = "<group>"; };
+		1CBFAF6615892DF4008D08DD /* tableCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableCell.png; sourceTree = "<group>"; };
+		1CBFAF6715892DF4008D08DD /* tableCell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableCell@2x.png"; sourceTree = "<group>"; };
+		1CBFAF6A15892ECE008D08DD /* tableCell10px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableCell10px.png; sourceTree = "<group>"; };
+		1CBFAF6B15892ECE008D08DD /* tableCell10px@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableCell10px@2x.png"; sourceTree = "<group>"; };
+		1CBFAF6E158930D9008D08DD /* ComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
+		1CBFAF6F158930D9008D08DD /* ComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
+		1CBFAF71158931AC008D08DD /* tableCellSquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableCellSquare.png; sourceTree = "<group>"; };
+		1CBFAF72158931AC008D08DD /* tableCellSquare@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableCellSquare@2x.png"; sourceTree = "<group>"; };
+		1CBFAF751589346D008D08DD /* buttonCreate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonCreate.png; sourceTree = "<group>"; };
+		1CBFAF761589346D008D08DD /* buttonCreate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonCreate@2x.png"; sourceTree = "<group>"; };
+		1CBFAF79158934CE008D08DD /* buttonSettings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonSettings.png; sourceTree = "<group>"; };
+		1CBFAF7A158934CE008D08DD /* buttonSettings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonSettings@2x.png"; sourceTree = "<group>"; };
+		1CBFAF7D15893580008D08DD /* buttonX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonX.png; sourceTree = "<group>"; };
+		1CBFAF7E15893580008D08DD /* buttonX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonX@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +174,8 @@
 				1C43EA7A15658F81006C58AE /* RootViewController.m */,
 				1C946CBC156BFD0400690B0F /* SettingsViewController.h */,
 				1C946CBD156BFD0400690B0F /* SettingsViewController.m */,
+				1CBFAF6E158930D9008D08DD /* ComposeViewController.h */,
+				1CBFAF6F158930D9008D08DD /* ComposeViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -182,6 +211,12 @@
 		1C946CC2156BFED000690B0F /* NavBar */ = {
 			isa = PBXGroup;
 			children = (
+				1CBFAF7D15893580008D08DD /* buttonX.png */,
+				1CBFAF7E15893580008D08DD /* buttonX@2x.png */,
+				1CBFAF79158934CE008D08DD /* buttonSettings.png */,
+				1CBFAF7A158934CE008D08DD /* buttonSettings@2x.png */,
+				1CBFAF751589346D008D08DD /* buttonCreate.png */,
+				1CBFAF761589346D008D08DD /* buttonCreate@2x.png */,
 				1C080DB8156C148000DC3DC9 /* backButton.png */,
 				1C080DB9156C148000DC3DC9 /* backButton@2x.png */,
 				1C946CB4156BF15400690B0F /* createButton.png */,
@@ -217,6 +252,12 @@
 		1C9FA33B157848DA003AAA20 /* Table Cells */ = {
 			isa = PBXGroup;
 			children = (
+				1CBFAF71158931AC008D08DD /* tableCellSquare.png */,
+				1CBFAF72158931AC008D08DD /* tableCellSquare@2x.png */,
+				1CBFAF6A15892ECE008D08DD /* tableCell10px.png */,
+				1CBFAF6B15892ECE008D08DD /* tableCell10px@2x.png */,
+				1CBFAF6615892DF4008D08DD /* tableCell.png */,
+				1CBFAF6715892DF4008D08DD /* tableCell@2x.png */,
 				1C9FA345157849AA003AAA20 /* tableCellFacebook.png */,
 				1C9FA33D157848E9003AAA20 /* tableCellFacebook@2x.png */,
 				1C9FA33E157848E9003AAA20 /* tableCellInstagram@2x.png */,
@@ -295,6 +336,18 @@
 				1C9FA343157848E9003AAA20 /* tableCellTumblr@2x.png in Resources */,
 				1C9FA344157848E9003AAA20 /* tableCellTwitter@2x.png in Resources */,
 				1C9FA346157849AA003AAA20 /* tableCellFacebook.png in Resources */,
+				1CBFAF6815892DF4008D08DD /* tableCell.png in Resources */,
+				1CBFAF6915892DF4008D08DD /* tableCell@2x.png in Resources */,
+				1CBFAF6C15892ECE008D08DD /* tableCell10px.png in Resources */,
+				1CBFAF6D15892ECE008D08DD /* tableCell10px@2x.png in Resources */,
+				1CBFAF73158931AC008D08DD /* tableCellSquare.png in Resources */,
+				1CBFAF74158931AC008D08DD /* tableCellSquare@2x.png in Resources */,
+				1CBFAF771589346D008D08DD /* buttonCreate.png in Resources */,
+				1CBFAF781589346D008D08DD /* buttonCreate@2x.png in Resources */,
+				1CBFAF7B158934CE008D08DD /* buttonSettings.png in Resources */,
+				1CBFAF7C158934CE008D08DD /* buttonSettings@2x.png in Resources */,
+				1CBFAF7F15893580008D08DD /* buttonX.png in Resources */,
+				1CBFAF8015893580008D08DD /* buttonX@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +363,7 @@
 				1C43EA6D15658E4A006C58AE /* AppDelegate.m in Sources */,
 				1C43EA7B15658F81006C58AE /* RootViewController.m in Sources */,
 				1C946CBE156BFD0400690B0F /* SettingsViewController.m in Sources */,
+				1CBFAF70158930D9008D08DD /* ComposeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
