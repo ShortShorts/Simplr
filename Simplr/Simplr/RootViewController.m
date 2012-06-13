@@ -20,6 +20,8 @@
 @property (strong) UIImageView                          *backgroundImageViewShadow;
 @property (nonatomic, strong) LRSlidingTableViewCell    *currentlyActiveSlidingCell;
 @property (assign) LRSlidingTableViewCellSwipeDirection swipeDirection;
+@property (strong) UIButton                             *feedButtonOne;
+@property (strong) UIButton                             *feedButtonTwo;
 
 // Private Methods
 - (void)setBackgroundImageForNavigationBar;
@@ -39,6 +41,8 @@
 @synthesize backgroundImageViewShadow       = _backgroundImageViewShadow;
 @synthesize currentlyActiveSlidingCell      = _currentlyActiveSlidingCell;
 @synthesize swipeDirection                  = _swipeDirection;
+@synthesize feedButtonOne                   = _feedButtonOne;
+@synthesize feedButtonTwo                   = _feedButtonTwo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -145,6 +149,19 @@
         cell = [[LRSlidingTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
+    // Create the feed buttons and add them to the background view
+    self.feedButtonOne = [[UIButton alloc] initWithFrame:CGRectMake(237.0f, 10.0f, 74.0f, 27.0f)];
+    [self.feedButtonOne addTarget:self action:@selector(buttonWasTouched:) forControlEvents:UIControlEventTouchUpInside];
+    [self.feedButtonOne setImage:[UIImage imageNamed:@"replyButton"] forState:UIControlStateNormal];
+    
+    self.feedButtonTwo = [[UIButton alloc] initWithFrame:CGRectMake(237.0f, 47.0f, 74.0f, 27.0f)];
+    [self.feedButtonTwo addTarget:self action:@selector(buttonWasTouched:) forControlEvents:UIControlEventTouchUpInside];
+    [self.feedButtonTwo setImage:[UIImage imageNamed:@"retweetButton"] forState:UIControlStateNormal];
+    
+    // Add the new buttons to the background view of the cell
+    [cell.backgroundView addSubview:self.feedButtonOne];
+    [cell.backgroundView addSubview:self.feedButtonTwo];
+    
     cell.contentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"tableCellSquare"]];
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -204,6 +221,9 @@
         
         ComposeViewController *composeController = [[ComposeViewController alloc] init];
         [self presentModalViewController:composeController animated:YES];
+    } else {
+        [[[UIAlertView alloc] initWithTitle:@"F&*^" message:@"Feed One" delegate:nil cancelButtonTitle:@"Screw it" otherButtonTitles:nil, nil] show];
+//        [[[UIAlertView alloc] initWithTitle:@"F&*^" message:@"Feed One" delegate:nil cancelButtonTitle:@"Screw it" otherButtonTitles:nil, nil] show];
     }
 }
 

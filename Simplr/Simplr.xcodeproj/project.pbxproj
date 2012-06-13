@@ -47,6 +47,10 @@
 		1CBFAF7C158934CE008D08DD /* buttonSettings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF7A158934CE008D08DD /* buttonSettings@2x.png */; };
 		1CBFAF7F15893580008D08DD /* buttonX.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF7D15893580008D08DD /* buttonX.png */; };
 		1CBFAF8015893580008D08DD /* buttonX@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF7E15893580008D08DD /* buttonX@2x.png */; };
+		1CBFAF8615893C74008D08DD /* replyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF8215893C74008D08DD /* replyButton.png */; };
+		1CBFAF8715893C74008D08DD /* replyButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF8315893C74008D08DD /* replyButton@2x.png */; };
+		1CBFAF8815893C74008D08DD /* retweetButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF8415893C74008D08DD /* retweetButton.png */; };
+		1CBFAF8915893C74008D08DD /* retweetButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF8515893C74008D08DD /* retweetButton@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +103,10 @@
 		1CBFAF7A158934CE008D08DD /* buttonSettings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonSettings@2x.png"; sourceTree = "<group>"; };
 		1CBFAF7D15893580008D08DD /* buttonX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonX.png; sourceTree = "<group>"; };
 		1CBFAF7E15893580008D08DD /* buttonX@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonX@2x.png"; sourceTree = "<group>"; };
+		1CBFAF8215893C74008D08DD /* replyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = replyButton.png; sourceTree = "<group>"; };
+		1CBFAF8315893C74008D08DD /* replyButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "replyButton@2x.png"; sourceTree = "<group>"; };
+		1CBFAF8415893C74008D08DD /* retweetButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retweetButton.png; sourceTree = "<group>"; };
+		1CBFAF8515893C74008D08DD /* retweetButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "retweetButton@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +211,7 @@
 		1C946CC1156BFECB00690B0F /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				1CBFAF8115893C5E008D08DD /* Feed */,
 				1C946CC2156BFED000690B0F /* NavBar */,
 			);
 			name = Buttons;
@@ -265,6 +274,17 @@
 				1C9FA340157848E9003AAA20 /* tableCellTwitter@2x.png */,
 			);
 			name = "Table Cells";
+			sourceTree = "<group>";
+		};
+		1CBFAF8115893C5E008D08DD /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				1CBFAF8215893C74008D08DD /* replyButton.png */,
+				1CBFAF8315893C74008D08DD /* replyButton@2x.png */,
+				1CBFAF8415893C74008D08DD /* retweetButton.png */,
+				1CBFAF8515893C74008D08DD /* retweetButton@2x.png */,
+			);
+			name = Feed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +368,10 @@
 				1CBFAF7C158934CE008D08DD /* buttonSettings@2x.png in Resources */,
 				1CBFAF7F15893580008D08DD /* buttonX.png in Resources */,
 				1CBFAF8015893580008D08DD /* buttonX@2x.png in Resources */,
+				1CBFAF8615893C74008D08DD /* replyButton.png in Resources */,
+				1CBFAF8715893C74008D08DD /* replyButton@2x.png in Resources */,
+				1CBFAF8815893C74008D08DD /* retweetButton.png in Resources */,
+				1CBFAF8915893C74008D08DD /* retweetButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
