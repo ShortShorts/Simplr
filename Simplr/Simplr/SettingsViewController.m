@@ -43,9 +43,9 @@
     return self;
 }
 
-- (void)viewDidLoad
+- (void)loadView
 {
-    [super viewDidLoad];
+    [super loadView];
 
     // Create the nav bar, close button, custom background, and table view
     [self createNavigationBarForUI];
@@ -108,9 +108,106 @@
     [self.view addSubview:self.backgroundImageViewShadow];
     
     // Create the table view
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 45, 320, 436) style:UITableViewStylePlain];
-    self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0.0f, 45.0f, 320.0f, 436.0f) style:UITableViewStyleGrouped];
     [self.view addSubview:self.tableView];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.backgroundColor = [UIColor clearColor];
+    
+}
+
+#pragma Table View Delegate Methods
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSString *)tableView:(UITableView *)tableView
+titleForHeaderInSection:(NSInteger)section
+{
+    switch (section) {
+        case 0:  return @"Connect to your favorite networks";
+        case 1:  return @"About Simplr";
+        default: return nil;
+    }
+}
+
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
+{
+    switch (section) {
+        case 0  : return 4;
+//        case 1  : return 4;
+        default : return 0;
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *identifier = @"CELL_IDENTIFIER";
+    
+    UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:identifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        
+        switch (indexPath.row) {
+            case 0:
+                cell.textLabel.text = @"Facebook";
+                break;
+            case 1:
+                cell.textLabel.text = @"Twitter";
+                break;
+            case 2:
+                cell.textLabel.text = @"Tumblr";
+                break;
+            case 3:
+                cell.textLabel.text = @"Instagram";
+                break;
+            default:
+                break;
+        }
+        
+        // Add a switch to allow the user to turn the netorks on (login) or off (logout)
+        UISwitch *useNetworkSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(200.0f, 11.0f, 50.0f, 10.0f)];
+        useNetworkSwitch.onTintColor = [UIColor grayColor];
+        [cell.contentView addSubview:useNetworkSwitch];
+        
+        // Customize the cell selection style
+        cell.selectionStyle = UITableViewCellSelectionStyleGray;
+    }
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Deselect the cell immediately
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    switch (indexPath.row) {
+        case 0:
+            
+            break;
+        case 1:
+            
+            break;
+        case 2:
+            
+            break;
+        case 3:
+            
+            break;
+        default:
+            break;
+    }
+
 }
 
 #pragma Button Methods

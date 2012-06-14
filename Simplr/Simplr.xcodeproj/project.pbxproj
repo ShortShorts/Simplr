@@ -51,6 +51,7 @@
 		1CBFAF8715893C74008D08DD /* replyButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF8315893C74008D08DD /* replyButton@2x.png */; };
 		1CBFAF8815893C74008D08DD /* retweetButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF8415893C74008D08DD /* retweetButton.png */; };
 		1CBFAF8915893C74008D08DD /* retweetButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFAF8515893C74008D08DD /* retweetButton@2x.png */; };
+		1CFACEBC15899D270076A89D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CFACEBB15899D270076A89D /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +108,7 @@
 		1CBFAF8315893C74008D08DD /* replyButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "replyButton@2x.png"; sourceTree = "<group>"; };
 		1CBFAF8415893C74008D08DD /* retweetButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retweetButton.png; sourceTree = "<group>"; };
 		1CBFAF8515893C74008D08DD /* retweetButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "retweetButton@2x.png"; sourceTree = "<group>"; };
+		1CFACEBB15899D270076A89D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CFACEBC15899D270076A89D /* Social.framework in Frameworks */,
 				1C43EA5D15658E4A006C58AE /* UIKit.framework in Frameworks */,
 				1C43EA5F15658E4A006C58AE /* Foundation.framework in Frameworks */,
 				1C43EA6115658E4A006C58AE /* CoreGraphics.framework in Frameworks */,
@@ -145,6 +148,7 @@
 		1C43EA5B15658E4A006C58AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1CFACEBB15899D270076A89D /* Social.framework */,
 				1C43EA5C15658E4A006C58AE /* UIKit.framework */,
 				1C43EA5E15658E4A006C58AE /* Foundation.framework */,
 				1C43EA6015658E4A006C58AE /* CoreGraphics.framework */,
